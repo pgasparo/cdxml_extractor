@@ -10,9 +10,7 @@ matplotlib==3.0.3
 openbabel==2.4.1
 pandas==0.24.2
 PTable==0.9.2
-rdkit
-joblib
+rdkit=2018.09.1
+prettytable=0.9.2
+re=2.2.1
 pybel
-ipython
-prettytable
-re

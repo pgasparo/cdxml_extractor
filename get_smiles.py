@@ -179,6 +179,11 @@ def getmolslist(mydoc):
     # assign the proper name to each molecule
     for im in [i for i,s in enumerate(texts) if 'name' in s.lower()]:
         lmol_dic[ptexts[im]]['name']=texts[im][5:len(texts[im])]
+
+    # just a sanity check solving things if the name is assigned
+    # to the wrong fragment
+    for lm in lmol_dic:
+        lm['name']=str(lm['name'])
         
     return lmol_dic
 
